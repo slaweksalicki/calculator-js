@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator in JavaScript</title>
+  <style type="text/css">
+    button {
+      padding: 5px;
+    }
+    #calculator {
+      width: 50%;
+      display: inline-grid;
+      grid-column-gap: 5px;
+      grid-row-gap:    5px;
+      border: solid 1px lightgrey;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    #display {
+      border: solid 1px grey;
+      padding: 10px;
+      text-align: right;
+      font-size: large;
+      grid-column-start: 1;
+      grid-column-end:   5;
+    }
+    #btn0 {
+      grid-column-start: 1;
+      grid-column-end:   3;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="calculator">
+    <input id="display" type="text" disabled value="0" />
+    <button id="btnAC" onclick="btnACClick()">AC</button>
+    <button id="btnPlusMinus" onclick="plusMinusClick()">+/-</button>
+    <button id="btnPercent" onclick="percentClick()">%</button>
+    <button id="btnDivide" onclick="divideClick()">/</button>
+    <button id="btn7" onclick="digitClick(7)">7</button>
+    <button id="btn8" onclick="digitClick(8)">8</button>
+    <button id="btn9" onclick="digitClick(9)">9</button>
+    <button id="btnMultiply" onclick="multiplyClick()">*</button>
+    <button id="btn4" onclick="digitClick(4)">4</button>
+    <button id="btn5" onclick="digitClick(5)">5</button>
+    <button id="btn6" onclick="digitClick(6)">6</button>
+    <button id="btnMinus" onclick="minusClick()">-</button>
+    <button id="btn1" onclick="digitClick(1)">1</button>
+    <button id="btn2" onclick="digitClick(2)">2</button>
+    <button id="btn3" onclick="digitClick(3)">3</button>
+    <button id="btnPlus" onclick="plusClick()">+</button>
+    <button id="btn0" onclick="digitClick(0)">0</button>
+    <button id="btnDot" onclick="dotClick()">.</button>
+    <button id="btnEqual" onclick="EqualClick()">=</button>
+  </div>
+  
+  <script src="calculator.js"></script>
+</body>
+</html>
